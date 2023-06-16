@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.fullscreen {
+  height: 100dvh;
+  background-color: #282c34;
+}
+.form-card {
+  background-color: #4a4a4b;
+  display: flex;
+  gap: 23px;
+  flex-direction: column;
+  width: 300px;
+  padding: 30px 20px 40px 20px;
+  border-radius: 3px 35px;
+  box-shadow: rgba(0, 0, 0, 0.39) 2px 3px 5px;
+}
+.input-field {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 40px;
+  padding-left: 10px;
   color: white;
+  width: calc(100% - 10px);
 }
-
-.App-link {
-  color: #61dafb;
+.button {
+  height: 35px;
+  background-color: rgb(94, 156, 255);
+  border-radius: 5px;
+  border: none;
+  color: rgb(222, 222, 222);
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form-title {
+  color: rgb(234, 232, 232);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  -webkit-box-shadow: #4a4a4b 0px 0px 0px 30px inset;
+}
+.input-err {
+  font-size: 11px;
+  position: absolute;
+  bottom: -15px;
+  color: #dd9797;
+  animation: shake linear 0.2s;
+}
+.form-element {
+  width: 100%;
+  position: relative;
+}
+@keyframes shake {
+  10% {
+    left: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  30% {
+    left: -10px;
+  }
+  60% {
+    left: 10px;
+  }
+  80% {
+    left: -10px;
+  }
+  100% {
+    left: 0px;
   }
 }

@@ -1,0 +1,42 @@
+.header {
+  height: 65px;
+  /* width: 100%; */
+  background-color: rgb(33, 31, 31);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+.header-name {
+  color: white;
+  font-size: 25px;
+}
+.logout {
+  color: white;
+  background-color: rgb(210, 62, 62);
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.title {
+  color: rgb(49, 144, 245);
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.user-details {
+  display: flex;
+  padding: 20% 10%;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 18px;
+  color: whitesmoke;
+}
+.check {
+  display: flex;
+  gap: 7px;
+}
